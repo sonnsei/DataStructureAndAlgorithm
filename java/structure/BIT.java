@@ -24,9 +24,7 @@ public class BIT {
     }
 
     public void update(int i, int val) {
-        System.out.println("start i:"+i);
         for (i++; i < parent.length; i += (i & (-i))) {
-            System.out.println(" i:"+i);
             parent[i] += val;
         }
     }
